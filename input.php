@@ -26,16 +26,16 @@
         </a>
         <?php
          if (isset($_SESSION['ipSearch'])) {
-           echo "<input class='form-control' type='text' id='input' name='ipSearch'
+           echo "<input class='form-control input-lg' type='text' id='input' name='ipSearch'
            pattern='^([0-9]{1,3})+\.([0-9]{1,3})+\.([0-9]{1,3})+\.([0-9]{1,3})$' size='60'
-           title='XXX.XXX.XXX.XXX' value='" .
+           title='XXX.XXX.XXX.XXX' placeholder='Please enter an IP address to search' value='" .
             $_SESSION['ipSearch'] . "' required>";
             unset($_SESSION['ipSearch']);
          }
          else {
-           echo "<input class='form-control' type='text' name='ipSearch'
+           echo "<input class='form-control input-lg' type='text' name='ipSearch'
            pattern='^([0-9]{1,3})+\.([0-9]{1,3})+\.([0-9]{1,3})+\.([0-9]{1,3})$' size='60'
-           title='XXX.XXX.XXX.XXX' required>";
+           placeholder='Please enter an IP address to search' title='XXX.XXX.XXX.XXX' required>";
          }
 
           if (isset($_SESSION['result'])) {

@@ -21,7 +21,7 @@
       <div style='text-align: center'>
         <img src='img/icon.png' height='150' width='150' style='margin-bottom: 2em;'>
         <input class='form-control-file' type='file' name='fileToUpload' accept='.log' id='fileToUpload'><br>
-        <button type='submit' class="btn btn-primary">Import</button>
+        <button type='submit' class="btn btn-primary">Next</button>
       </div>
     </form>
   </body>

@@ -9,6 +9,7 @@
     //echo "The file ". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded.";
     header('Location: input.php');
     $_SESSION['filePath'] = $target_file;
+    $_SESSION['fileName'] = basename($_FILES["fileToUpload"]["name"]);
     echo $_SESSION['filePath'];
   }
   else {
