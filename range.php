@@ -1,7 +1,8 @@
 <?php
+  //function to find the range for the given subnet mask
   function getSubnet($ip) {
     $subnet = substr($ip, strpos($ip, '/') + 1);
-    echo 'subnet = ' . $subnet;
+    //echo 'subnet = ' . $subnet;
     $range = 0;
     if ($subnet == 0) {
       $range = 4294967296;
@@ -41,29 +42,4 @@
     }
   return $range;
   }
-  $check = getSubnet('10.33.24.68/30');
-  echo 'range = ' . $check;
-
-  function findIP ($ipIn, $ipStart, $range) {
-
-   $ipIn = explode(".", $ipIn);
-
-   $ipStart = explode(".",$ipStart);
-
-   echo 'ipStart = ' . $ipStart[3];
-
-   $last = (int)$ipStart[3] + $range - 1;
-
-   if ($ipIn[3] <= $last && $ipIn[3] >= $ipStart[3]) {
-        echo "hi";
-    }
-   else {
-      echo "no";
-    }
-  echo 'ipin = ' . $ipIn[3];
-  echo 'iplast = ' .$last;
-  echo 'ipstart = ' .$ipStart[3];
-
-  }
-  findIP('10.23.0.20', '10.23.0.13', 5);
 ?>
