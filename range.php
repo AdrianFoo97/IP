@@ -38,7 +38,7 @@
       $range = 2;
     }
     else if ($subnet == 32) {
-      $range = 0;
+      $range = 1;
     }
   return $range;
   }

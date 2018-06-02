@@ -14,5 +14,5 @@
     $_SESSION['result'] = "Not Found";
     $_SESSION['ipSearch'] = $ipSearch;
   }
-  header('Location: input.php');
+  header('Location: index2.php');
 ?>
